@@ -69,6 +69,29 @@ set style data linespoints
 set style function lines
 set pointsize this_ps
 
+set linestyle 3 lt 3 lw 1 pt 1 ps 1
+set linestyle 1 lt 1 lw 1 pt 1 ps 1
+#set linestyle 2 lt rgb '#5e9c36' lw 1 pt -1 ps 1
+set linestyle 2 lt rgb green_075 lw 1 pt 1 ps 1
+
+#set style line 1  linecolor rgbcolor red_025   linewidth @this_line_width pt 7
+#set style line 2  linecolor rgbcolor green_025  linewidth @this_line_width pt 5
+#set style line 3  linecolor rgbcolor blue_025 linewidth @this_line_width pt 9
+set style line 4  linecolor rgbcolor brown_025 linewidth @this_line_width pt 13
+set style line 5  linecolor rgbcolor blue_050  linewidth @this_line_width pt 11
+set style line 6  linecolor rgbcolor green_050 linewidth @this_line_width pt 7
+set style line 7  linecolor rgbcolor red_050   linewidth @this_line_width pt 5
+set style line 8  linecolor rgbcolor brown_050 linewidth @this_line_width pt 9
+set style line 9  linecolor rgbcolor blue_075  linewidth @this_line_width pt 13
+set style line 10 linecolor rgbcolor green_075 linewidth @this_line_width pt 11
+set style line 11 linecolor rgbcolor red_075   linewidth @this_line_width pt 7
+set style line 12 linecolor rgbcolor brown_075 linewidth @this_line_width pt 5
+set style line 13 linecolor rgbcolor blue_100  linewidth @this_line_width pt 9
+set style line 14 linecolor rgbcolor green_100 linewidth @this_line_width pt 13
+set style line 15 linecolor rgbcolor red_100   linewidth @this_line_width pt 11
+set style line 16 linecolor rgbcolor brown_100 linewidth @this_line_width pt 7
+set style line 17 linecolor rgbcolor "#224499" linewidth @this_line_width pt 5
+
 ###
 # END FORMATING
 ###
@@ -85,9 +108,9 @@ set noytics
 # plot triangular coordinate system, using different
 # colours for each axis
 
-set linestyle 3 lt 3 lw 1 pt 1 ps 1
-set linestyle 1 lt 1 lw 1 pt 1 ps 1
-set linestyle 2 lt rgb green_075 lw 1 pt 1 ps 1
+set linestyle 3 lt 3 lw 1 pt -1 ps 1
+set linestyle 1 lt 1 lw 1 pt -1 ps 1
+set linestyle 2 lt rgb '#14a83b' lw 1 pt -1 ps 1
 
 # x-axis
 set arrow  1 from  0,0 to 100.0,  0.0 nohead linestyle 3
@@ -100,16 +123,16 @@ set arrow  7 from 60,0 to  80.0, 34.6 nohead linestyle 3
 set arrow  8 from 70,0 to  85.0, 26.0 nohead linestyle 3
 set arrow  9 from 80,0 to  90.0, 17.3 nohead linestyle 3
 set arrow 10 from 90,0 to  95.0,  8.7 nohead linestyle 3
-set label  1  "0" at  0,-2 center tc lt 3
-set label  2 "10" at 10,-2 center tc lt 3
-set label  3 "20" at 20,-2 center tc lt 3
-set label  4 "30" at 30,-2 center tc lt 3
-set label  5 "40" at 40,-2 center tc lt 3
-set label  6 "50" at 50,-2 center tc lt 3
-set label  7 "60" at 60,-2 center tc lt 3
-set label  8 "70" at 70,-2 center tc lt 3
-set label  9 "80" at 80,-2 center tc lt 3
-set label 10 "90" at 90,-2 center tc lt 3
+set label  1  "0" at  0,-5 center tc lt 3
+set label  2 "10" at 10,-5 center tc lt 3
+set label  3 "20" at 20,-5 center tc lt 3
+set label  4 "30" at 30,-5 center tc lt 3
+set label  5 "40" at 40,-5 center tc lt 3
+set label  6 "50" at 50,-5 center tc lt 3
+set label  7 "60" at 60,-5 center tc lt 3
+set label  8 "70" at 70,-5 center tc lt 3
+set label  9 "80" at 80,-5 center tc lt 3
+set label 10 "90" at 90,-5 center tc lt 3
 
 # y-axis
 set arrow 11 from 100,  0.0 to  50.0, 86.6 nohead linestyle 1
@@ -161,10 +184,10 @@ gy(x,y) = y * cos(30)
 # Plot actual data
 # From here on change according to need
 
-   this_font = "SVBasic Manual, 16"
+   this_font = "SVBasic Manual, 18"
 set label 41 "Water (%)" at 50,-10 center  tc lt 3      # label x-Axis
 set label 42 "Acetic Acid (%)" at 90,50 center rotate by -60 tc lt 1# label y-Axis
-set label 43 "Ethyl Acetate (%)" at 10,50 center rotate by 60 tc rgb green_075   # label z-Axis
+set label 43 "Ethyl Acetate (%)" at 10,50 center rotate by 60 tc rgb '#14a83b'   # label z-Axis
 
 set output "${output_file}
 
