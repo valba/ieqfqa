@@ -1,2 +1,4 @@
 # Ignore generated .png files
 *.png
+# Ignore checkpoints
+*.ipynb_checkpoints
