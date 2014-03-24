@@ -17,4 +17,4 @@ your contributions.
 # License
 
 The text and IPython notebooks contained therein are all licensed
-GPL3.
+[GPLv3](http://gplv3.fsf.org/).
