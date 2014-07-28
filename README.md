@@ -1,4 +1,5 @@
 # ieqfqa
+This is a support repository for http://sati.telemako.org/ieqfqa.
 
 To get started using this repository in the simplest manner possible,
 go to a local directory on your system where you want to work and type:
